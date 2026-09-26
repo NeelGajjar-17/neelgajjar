@@ -38,3 +38,10 @@ html{scroll-behavior:smooth}body{font-family:Inter,ui-sans-serif,-apple-system,B
 @media(max-width:900px){.story-map-inner{grid-template-columns:1fr;gap:0;padding-top:15px}.story-current span{display:none}.story-map ol{overflow-x:auto;grid-template-columns:repeat(6,minmax(100px,1fr));margin:0 -18px;padding:0 18px}.story-map li{white-space:nowrap}.story-handoff .wrap>div{grid-template-columns:1fr;gap:36px}}
 @media(max-width:560px){.story-map{display:none}.story-handoff{padding:56px 0}.story-handoff h2{font-size:34px}}
 @media(prefers-reduced-motion:reduce){.story-handoff a b{transition:none!important}.story-handoff a:hover b{transform:none!important}}
+
+/* Narrative motion: hierarchy, not decoration */
+[data-story-reveal]{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+[data-story-reveal].story-seen{opacity:1;transform:none}
+.story-map li.active:after{transform-origin:left;animation:storyline .65s cubic-bezier(.2,.7,.2,1) both}
+@keyframes storyline{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media(prefers-reduced-motion:reduce){[data-story-reveal]{opacity:1!important;transform:none!important;transition:none!important}.story-map li.active:after{animation:none!important}}
