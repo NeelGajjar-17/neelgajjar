@@ -12,3 +12,29 @@
 /* Global release QA */
 html{scroll-behavior:smooth}body{font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}.skip-link{position:fixed;left:12px;top:-60px;z-index:9999;background:var(--cyan);color:#021018;padding:10px 14px;border-radius:8px;font-weight:800;text-decoration:none}.skip-link:focus{top:12px}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}.menu-toggle{display:none;background:transparent;border:1px solid var(--line);color:var(--text);border-radius:10px;padding:9px 11px;font:700 11px ui-monospace,monospace;cursor:pointer}@media(max-width:850px){.navin{position:relative}.menu-toggle{display:block}.links{display:none;position:absolute;top:calc(100% + 10px);left:0;right:0;background:rgba(5,9,20,.98);border:1px solid var(--line);border-radius:14px;padding:10px;box-shadow:0 18px 45px rgba(0,0,0,.35)}.links.open{display:grid}.links a{padding:11px 12px}.links .pill{margin:2px 0 0}.nav{overflow:visible}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}.project-tab,.cd-stage,.contact-action{transition:none!important}.project-tab:hover,.cd-stage:hover,.contact-action:hover{transform:none!important}}
+/* V3 narrative architecture */
+.story-map{background:#10212d;color:#fff;border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.12)}
+.story-map-inner{min-height:76px;display:grid;grid-template-columns:minmax(190px,.72fr) 2fr;align-items:center;gap:34px}
+.story-current{display:grid;grid-template-columns:auto 1fr;column-gap:12px;align-items:baseline}
+.story-current small{grid-column:1/-1;font:700 9px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.16em;color:#62c9c5;margin-bottom:5px}
+.story-current strong{font-size:14px;letter-spacing:-.01em}
+.story-current span{font-size:11px;color:rgba(255,255,255,.58)}
+.story-map ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,1fr)}
+.story-map li{position:relative;padding:19px 10px 17px;border-left:1px solid rgba(255,255,255,.1);font-size:10px;color:rgba(255,255,255,.48)}
+.story-map li span{display:block;font:700 9px ui-monospace,SFMono-Regular,Menlo,monospace;color:rgba(255,255,255,.28);margin-bottom:5px}
+.story-map li.active{color:#fff;background:rgba(98,201,197,.08)}
+.story-map li.active:after{content:"";position:absolute;left:10px;right:10px;bottom:0;height:2px;background:#62c9c5}
+.story-handoff{background:#e8e5de;color:#10212d;padding:76px 0;border-top:1px solid rgba(16,33,45,.12)}
+.story-handoff.dark{background:#071c29;color:#fff;border-color:rgba(255,255,255,.1)}
+.story-handoff .wrap>small{display:block;font:700 10px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.16em;color:#12627b;margin-bottom:22px}
+.story-handoff.dark .wrap>small{color:#62c9c5}
+.story-handoff .wrap>div{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(240px,.65fr);gap:64px;align-items:end}
+.story-handoff span{display:block;font:700 10px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;opacity:.58;margin-bottom:12px}
+.story-handoff h2{font:600 clamp(30px,4vw,52px)/1.03 Georgia,"Times New Roman",serif;letter-spacing:-.035em;max-width:820px;margin:0 0 16px}
+.story-handoff p{max-width:760px;margin:0;color:inherit;opacity:.7;font-size:15px;line-height:1.7}
+.story-handoff a{display:flex;justify-content:space-between;align-items:center;gap:24px;border-top:1px solid currentColor;border-bottom:1px solid currentColor;padding:18px 0;color:inherit;text-decoration:none;font-weight:700;font-size:14px}
+.story-handoff a b{font-size:20px;transition:transform .2s ease}
+.story-handoff a:hover b{transform:translateX(5px)}
+@media(max-width:900px){.story-map-inner{grid-template-columns:1fr;gap:0;padding-top:15px}.story-current span{display:none}.story-map ol{overflow-x:auto;grid-template-columns:repeat(6,minmax(100px,1fr));margin:0 -18px;padding:0 18px}.story-map li{white-space:nowrap}.story-handoff .wrap>div{grid-template-columns:1fr;gap:36px}}
+@media(max-width:560px){.story-map{display:none}.story-handoff{padding:56px 0}.story-handoff h2{font-size:34px}}
+@media(prefers-reduced-motion:reduce){.story-handoff a b{transition:none!important}.story-handoff a:hover b{transform:none!important}}
