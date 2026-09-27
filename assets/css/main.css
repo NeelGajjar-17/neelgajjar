@@ -66,3 +66,8 @@ html{scroll-behavior:smooth}body{font-family:Inter,ui-sans-serif,-apple-system,B
 @media(max-width:850px){.menu-toggle{border-color:rgba(18,98,123,.28);color:inherit}.links.open{max-height:calc(100vh - 95px);overflow:auto}.links.open a{display:block!important}}
 @media(max-width:600px){:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) .wrap{width:min(100% - 36px,1240px)}.story-handoff p{font-size:13px}.portfolio-video-placeholder{padding:22px}.portfolio-video-placeholder:before{left:16px;top:14px}.portfolio-video-placeholder button{width:58px;height:58px}}
 @media(prefers-reduced-motion:reduce){[data-sequence]>*{opacity:1!important;transform:none!important;transition:none!important}:where(.v3-value-grid,.ex4-context-grid,.cv4-lead-grid,.pj4-dossier,.lv4-debrief-grid,.ct4-fit-grid) article:hover{transform:none!important}:where(.pj4-architecture,.pj4-toolchain,.pj4-pattern-flow,.cv4-model-flow,.cv4-exception-flow,.ex4-progression-model):hover i{transform:none!important}.nav{transition:none!important}}
+
+/* Release candidate touch and focus refinements */
+@media(pointer:coarse){.links a,.v3-button,.story-handoff a,.ct4-routes a{min-height:44px}.menu-toggle{min-width:48px;min-height:44px}.portfolio-video-placeholder button{min-width:60px;min-height:60px}}
+:where(.cv4-exception-flow,.pj4-toolchain,.pj4-pattern-flow){scrollbar-width:thin}
+:where(.cv4-exception-flow,.pj4-toolchain,.pj4-pattern-flow):focus-within{outline:2px solid var(--blue);outline-offset:4px}
