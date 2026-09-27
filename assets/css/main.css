@@ -77,3 +77,17 @@ html{scroll-behavior:smooth}body{font-family:Inter,ui-sans-serif,-apple-system,B
 :where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) :is(h1,h2){font-kerning:normal}
 :where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) :is(h1,h2) em{font-family:var(--font-serif)!important;font-weight:400!important;font-style:italic}
 :where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) :is(.eyebrow,.mono,.v3-kicker,.v3-overline,.v3-label,.pr3-kicker,.cv3-kicker,.pv3-kicker,.lv3-kicker,.ct3-kicker,.story-current small,.story-map li span){font-family:var(--font-mono)}
+
+/* V3 editorial micro system */
+:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) .brand{font-family:var(--font-sans);font-weight:800;letter-spacing:.07em}
+:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) .brand small{font-family:var(--font-mono);font-weight:600;letter-spacing:.16em}
+:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) .links a{font-family:var(--font-sans);font-weight:700;letter-spacing:-.01em}
+:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) main p{max-width:72ch}
+:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) :is(.v3-button,.pr3-actions a,.cv4-hero-note a,.ex4-hero-question a,.pj4-case a,.story-handoff a,.ct4-close a){font-weight:750}
+:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) :is(.v3-button,.pr3-actions a,.cv4-hero-note a,.ex4-hero-question a,.story-handoff a,.ct4-close a) span,
+:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) :is(.v3-button,.pr3-actions a,.cv4-hero-note a,.ex4-hero-question a,.story-handoff a,.ct4-close a) b{transition:transform .22s cubic-bezier(.2,.7,.2,1)}
+:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) :is(.v3-button,.pr3-actions a,.cv4-hero-note a,.ex4-hero-question a,.story-handoff a,.ct4-close a):hover span,
+:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) :is(.v3-button,.pr3-actions a,.cv4-hero-note a,.ex4-hero-question a,.story-handoff a,.ct4-close a):hover b{transform:translateX(4px)}
+:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) ::selection{background:#12627b;color:#fff}
+@media(max-width:600px){:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) .links a{font-size:15px}:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) main p{max-width:none}}
+@media(prefers-reduced-motion:reduce){:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) :is(.v3-button,.pr3-actions a,.cv4-hero-note a,.ex4-hero-question a,.story-handoff a,.ct4-close a) span,:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) :is(.v3-button,.pr3-actions a,.cv4-hero-note a,.ex4-hero-question a,.story-handoff a,.ct4-close a) b{transition:none!important}}
