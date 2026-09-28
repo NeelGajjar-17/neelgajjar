@@ -17,3 +17,7 @@
 .lv3-screen{box-shadow:none;border:1px solid #d8d3ca}
 .lv3-lock-score,.lv3-purpose{background:#315f6d}
 .lv4-brief,.lv4-debrief{background:#fbfaf7}
+
+/* Data Lab V5: analytical snapshot */
+.lv5-issue-chart{margin:30px 0 36px;padding:28px 30px;background:#fbfaf7;border:1px solid #d6d4ce}.lv5-issue-chart figcaption{display:flex;justify-content:space-between;align-items:end;gap:30px;border-bottom:1px solid #d6d4ce;padding-bottom:18px;margin-bottom:22px}.lv5-issue-chart figcaption small{font:800 7px var(--font-mono);letter-spacing:.13em;color:var(--blue)}.lv5-issue-chart h3{font-size:20px;letter-spacing:-.025em;margin:7px 0 0}.lv5-issue-chart figcaption>span{font-size:9px;color:var(--muted)}.lv5-bars{display:grid;gap:15px}.lv5-bars>div{display:grid;grid-template-columns:135px 1fr;gap:18px;align-items:center}.lv5-bars label{display:flex;justify-content:space-between;font-size:10px}.lv5-bars label span{color:var(--blue);font-weight:800}.lv5-bars i{height:7px;background:#e3e4df;overflow:hidden}.lv5-bars em{display:block;width:var(--w);height:100%;background:var(--blue)}.lv5-issue-chart>p{font-size:9px!important;color:var(--muted);margin:18px 0 0;max-width:none!important}
+@media(max-width:600px){.lv5-issue-chart{padding:22px 18px}.lv5-issue-chart figcaption{align-items:flex-start;flex-direction:column;gap:8px}.lv5-bars>div{grid-template-columns:100px 1fr}}
