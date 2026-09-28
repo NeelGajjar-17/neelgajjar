@@ -50,3 +50,15 @@
 
 .pr4-video-story{padding:115px 0;background:#e9e0d3}.pr4-video-story>.wrap{display:grid;grid-template-columns:.62fr 1.38fr;gap:85px;align-items:center}.pr4-video-copy>span{font:800 9px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.14em;color:var(--blue)}.pr4-video-copy h2{font-size:clamp(44px,5vw,66px);line-height:.97;letter-spacing:-.05em;margin:18px 0}.pr4-video-copy h2 em{font-family:var(--font-serif);font-weight:400;color:var(--blue)}.pr4-video-copy>p{font-size:14px;line-height:1.75;color:var(--muted)}.pr4-video-guide{display:grid;grid-template-columns:auto 1fr;gap:7px 16px;border-top:1px solid #c2b9ad;margin-top:28px;padding-top:18px}.pr4-video-guide small{font-size:7px;letter-spacing:.1em;color:#738086}.pr4-video-guide b{font-size:9px}
 @media(max-width:900px){.pr4-video-story>.wrap{grid-template-columns:1fr}}@media(max-width:600px){.pr4-video-story{padding:78px 0}}
+
+
+/* Modern classic refinement */
+
+.profile-v3{--paper:#f7f4ee;--ink:#17232b;--navy:#132631;--blue:#315f6d;--aqua:#8bb5b1;--muted:#66757b}
+.profile-v3 .pr3-nav{background:rgba(247,244,238,.94);border-color:#d8d3ca}
+.pr3-about-hero h1,.pr3-exp-hero h1,.ex4-hero h1{letter-spacing:-.052em;line-height:.94}
+.pr3-portrait{box-shadow:none}.pr3-portrait img{filter:saturate(.72) contrast(1.01)}
+.ab4-thesis,.ex4-role-proof{background:#132631}
+.ab4-identity-model .center{box-shadow:none}
+.ab4-principle-grid article,.ex4-context-grid article{transition:none}
+.ex4-growth{background:#315f6d}.ex4-bridge,.pr4-video-story{background:#eee8de}
