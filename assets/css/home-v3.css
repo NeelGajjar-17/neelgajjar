@@ -141,3 +141,14 @@
   .v3-map-control{align-items:flex-start;flex-direction:column;gap:7px}
   .v3-map-control p{text-align:left!important}
 }
+
+/* Screenshot QC: mobile decision sequence */
+@media(max-width:900px){
+  .v3-decision-grid{overflow:visible}
+  .v3-decision-flow{min-width:0;overflow:visible;grid-template-columns:1fr;gap:0}
+  .v3-decision-flow>div{min-height:0;padding:16px 0;border-top:1px solid #9eb0ad}
+  .v3-decision-flow>div:first-child{border-top:2px solid var(--blue)}
+  .v3-decision-flow b{display:inline-block;width:34px;margin:0;color:var(--blue)}
+  .v3-decision-flow span{font-size:12px}
+  .v3-decision-flow i{transform:rotate(90deg);padding:2px 0 2px 12px;text-align:left;height:20px}
+}
