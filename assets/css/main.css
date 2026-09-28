@@ -91,3 +91,20 @@ html{scroll-behavior:smooth}body{font-family:Inter,ui-sans-serif,-apple-system,B
 :where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) ::selection{background:#12627b;color:#fff}
 @media(max-width:600px){:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) .links a{font-size:15px}:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) main p{max-width:none}}
 @media(prefers-reduced-motion:reduce){:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) :is(.v3-button,.pr3-actions a,.cv4-hero-note a,.ex4-hero-question a,.story-handoff a,.ct4-close a) span,:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) :is(.v3-button,.pr3-actions a,.cv4-hero-note a,.ex4-hero-question a,.story-handoff a,.ct4-close a) b{transition:none!important}}
+
+/* Modern classic shared finish */
+:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) .nav{box-shadow:none}
+:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) .nav.nav-scrolled{box-shadow:0 8px 28px rgba(23,35,43,.055)}
+:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) .links{gap:22px}
+:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) .links a{font-size:13px;font-weight:650}
+:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) .pill{border-radius:0;padding:10px 15px}
+:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) :is(h1,h2,h3){text-wrap:balance}
+:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) h1{font-weight:750}
+:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) :is(h2,h3){letter-spacing:-.025em}
+:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) main p{line-height:1.72}
+:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) :is(.v3-button,.pr3-actions a,.story-handoff a,.ct4-close a){border-radius:0}
+:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) :is(.story-map,.story-handoff){border-color:rgba(23,35,43,.12)}
+:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) :is(.v3-value-grid,.ex4-context-grid,.cv4-lead-grid,.pj4-dossier,.lv4-debrief-grid,.ct4-fit-grid) article:hover{transform:none}
+:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) a{transition-duration:.16s}
+[data-sequence]>*{transform:translateY(8px);transition-duration:.42s}
+@media(max-width:600px){:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) .links a{font-size:14px}}
