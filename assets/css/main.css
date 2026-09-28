@@ -108,3 +108,8 @@ html{scroll-behavior:smooth}body{font-family:Inter,ui-sans-serif,-apple-system,B
 :where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) a{transition-duration:.16s}
 [data-sequence]>*{transform:translateY(8px);transition-duration:.42s}
 @media(max-width:600px){:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) .links a{font-size:14px}}
+
+/* Recruiter navigation + contrast hardening */
+.story-map li{padding:0}.story-map li a{display:block;padding:19px 10px 17px;color:inherit;text-decoration:none;min-height:100%}.story-map li a:hover{background:rgba(255,255,255,.035);color:#fff}.story-map li.active a{background:transparent}.story-map li a:focus-visible{outline:2px solid #8bb5b1;outline-offset:-3px}
+:where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3){--muted:#5f6f75;--v3muted:#5f6f75}
+@media(max-width:900px){.story-map li a{padding:17px 10px 16px}}
