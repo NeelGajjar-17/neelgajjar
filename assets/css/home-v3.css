@@ -80,3 +80,64 @@
 .v3-project-main:hover,.v3-lab-preview:hover{transform:translateY(-2px);box-shadow:0 18px 42px rgba(22,35,43,.08)}
 .v3-signature{background:#fbfaf7}.v3-system-map{background:#132631;box-shadow:none;border:1px solid #29414b}.v3-system-map:before{opacity:.35;background-size:52px 52px}.v3-system-map .hub{box-shadow:none;border-color:rgba(139,181,177,.38)}.v3-system-map .node{background:rgba(19,38,49,.96);border-color:rgba(139,181,177,.28)}
 .v3-closing{background:#132631}
+
+
+/* Screenshot QC: portrait composition and ordered system pathway */
+.v3-hero-signal{display:grid;gap:0}
+.v3-hero-signal>div{display:grid;grid-template-columns:28px 1fr;align-items:center;min-height:34px;border-bottom:1px solid rgba(139,181,177,.2)}
+.v3-hero-signal>div:last-child{border-bottom:0}
+.v3-hero-signal>div span{width:auto}
+.v3-hero-signal>div b{font-size:7px;letter-spacing:.11em}
+
+.v3-system-map{position:relative;min-height:0;padding:28px 28px 24px;background:#132631;border:1px solid #29414b;overflow:hidden}
+.v3-system-map:before{opacity:.26;background-size:52px 52px}
+.v3-map-head,.v3-map-flow,.v3-map-control{position:relative;z-index:1}
+.v3-map-head{display:flex;justify-content:space-between;gap:24px;align-items:end;padding-bottom:18px;border-bottom:1px solid #38515b}
+.v3-map-head small{font:800 7px var(--font-mono);letter-spacing:.14em;color:#8bb5b1}
+.v3-map-head strong{font-size:11px;color:#dbe7e7;text-align:right}
+.v3-map-flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr auto 1fr;gap:10px;align-items:stretch;padding:32px 0 24px}
+.v3-map-flow article{min-width:0;padding:18px 16px;border-top:1px solid #55727a;background:rgba(255,255,255,.018)}
+.v3-map-flow article.final{background:#193541;border-top-color:#8bb5b1}
+.v3-map-flow article>span,.v3-map-flow article>small,.v3-map-flow article>b,.v3-map-flow article>p{display:block}
+.v3-map-flow article>span{font:800 8px var(--font-mono);color:#8bb5b1}
+.v3-map-flow article>small{font:800 7px var(--font-mono);letter-spacing:.11em;color:#8fa8ad;margin-top:18px}
+.v3-map-flow article>b{font-size:12px;line-height:1.25;color:#fff;margin-top:7px}
+.v3-map-flow article>p{font-size:9px;line-height:1.55;color:#9eb1b5;margin:16px 0 0}
+.v3-map-flow>i{font-style:normal;color:#8bb5b1;display:grid;place-items:center;font-size:15px}
+.v3-map-control{display:flex;justify-content:space-between;gap:22px;align-items:center;padding-top:18px;border-top:1px solid #38515b}
+.v3-map-control span{font:800 8px var(--font-mono);letter-spacing:.13em;color:#8bb5b1}
+.v3-map-control p{font-size:9px!important;color:#9eb1b5!important;margin:0!important;max-width:none!important;text-align:right}
+
+@media(max-width:950px){
+  .v3-map-flow{grid-template-columns:1fr}
+  .v3-map-flow>i{transform:rotate(90deg);min-height:18px}
+  .v3-map-flow article{padding:17px 18px}
+  .v3-map-flow article>small{margin-top:10px}
+  .v3-map-flow article>p{margin-top:8px}
+}
+@media(max-width:700px){
+  .v3-portrait-wrap{display:flex;flex-direction:column;min-height:0;gap:0}
+  .v3-portrait-frame{order:1;height:auto;aspect-ratio:4/5}
+  .v3-portrait-frame img{object-position:center top}
+  .v3-portrait-note{position:static;order:2;left:auto;bottom:auto;min-width:0;width:100%;padding:16px 18px}
+  .v3-hero-signal{position:static;order:3;left:auto;top:auto;width:100%;padding:0;background:#152a34;border:1px solid #29414b;border-top:0;grid-template-columns:1fr 1fr}
+  .v3-hero-signal>div{grid-template-columns:28px 1fr;min-height:48px;padding:0 14px;border-bottom:1px solid #29414b}
+  .v3-hero-signal>div:nth-child(odd){border-right:1px solid #29414b}
+  .v3-hero-signal>div:nth-child(3),.v3-hero-signal>div:nth-child(4){border-bottom:0}
+  .v3-hero-signal>div b{font-size:8px}
+  .v3-hero-signal>div span{font-size:8px}
+  .v3-portrait-grid{opacity:.18}
+  .v3-signature>.wrap{gap:42px}
+  .v3-system-map{padding:22px 18px 20px}
+  .v3-map-head{align-items:flex-start;flex-direction:column;gap:8px}
+  .v3-map-head strong{text-align:left;line-height:1.55}
+  .v3-map-flow{padding:22px 0 18px;gap:8px}
+  .v3-map-flow article{display:grid;grid-template-columns:34px 1fr;column-gap:10px}
+  .v3-map-flow article>span{grid-row:1/4;padding-top:2px}
+  .v3-map-flow article>small,.v3-map-flow article>b,.v3-map-flow article>p{grid-column:2}
+  .v3-map-flow article>small{margin-top:0}
+  .v3-map-flow article>b{font-size:13px}
+  .v3-map-flow article>p{font-size:10px}
+  .v3-map-control{align-items:flex-start;flex-direction:column;gap:7px}
+  .v3-map-control p{text-align:left!important}
+}
