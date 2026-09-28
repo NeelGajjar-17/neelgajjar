@@ -62,3 +62,10 @@
 .ab4-identity-model .center{box-shadow:none}
 .ab4-principle-grid article,.ex4-context-grid article{transition:none}
 .ex4-growth{background:#315f6d}.ex4-bridge,.pr4-video-story{background:#eee8de}
+
+/* Screenshot QC: prevent portrait overlays on narrow screens */
+@media(max-width:700px){
+  .pr3-portrait{display:flex;flex-direction:column}
+  .pr3-portrait img{height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center top}
+  .pr3-portrait figcaption{position:static;left:auto;bottom:auto;min-width:0;width:100%;padding:16px 18px}
+}
