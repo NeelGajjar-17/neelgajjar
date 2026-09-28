@@ -6,3 +6,14 @@
 .lv4-brief{background:#fff;padding:75px 0}.lv4-brief>.wrap{display:grid;grid-template-columns:1fr .85fr;gap:90px;align-items:end}.lv4-brief span,.lv4-debrief>div>div>span,.lv4-workspace-label span{font:800 9px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.14em;color:var(--blue)}.lv4-brief h2{font-size:clamp(40px,4.5vw,60px);line-height:1;letter-spacing:-.045em;margin:17px 0 0}.lv4-brief p{font-size:15px;line-height:1.75;color:var(--muted);margin:0}.lv4-workspace-label{display:flex!important;grid-column:1/-1;justify-content:space-between;align-items:center;border-bottom:1px solid #b8c1bd;padding-bottom:15px;margin-bottom:5px}.lv4-workspace-label p{font-size:9px;color:#6d7d82;margin:0}.lv4-debrief{background:#fff;padding:105px 0}.lv4-debrief>.wrap>div:first-child{display:grid;grid-template-columns:190px 1fr;gap:30px;align-items:start}.lv4-debrief h2{font-size:clamp(45px,5.5vw,72px);line-height:.95;letter-spacing:-.05em;margin:0}.lv4-debrief h2 em{font-family:var(--font-serif);font-weight:400;color:var(--blue)}.lv4-debrief-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #c3cac6;margin-top:55px}.lv4-debrief-grid article{padding:28px 28px 0 0}.lv4-debrief-grid article+article{padding-left:28px;border-left:1px solid #c3cac6}.lv4-debrief-grid b{font-size:9px;color:var(--blue)}.lv4-debrief-grid h3{font-size:18px;line-height:1.15;margin:18px 0 9px}.lv4-debrief-grid p{font-size:11px;line-height:1.68;color:var(--muted)}
 @media(max-width:900px){.lv4-brief>.wrap{grid-template-columns:1fr}.lv4-debrief-grid{grid-template-columns:1fr 1fr}.lv4-debrief>.wrap>div:first-child{grid-template-columns:1fr}}
 @media(max-width:600px){.lv4-brief,.lv4-debrief{padding:70px 0}.lv4-workspace-label{align-items:flex-start;flex-direction:column;gap:7px}.lv4-debrief-grid{grid-template-columns:1fr}.lv4-debrief-grid article,.lv4-debrief-grid article+article{padding:22px 0;border-left:0;border-bottom:1px solid #c3cac6}}
+
+
+/* Modern classic refinement */
+
+.lab-v3{--paper:#f7f4ee;--ink:#17232b;--navy:#132631;--blue:#315f6d;--aqua:#8bb5b1;--muted:#66757b}
+.lab-v3 .lv3-nav{background:rgba(247,244,238,.94);border-color:#d8d3ca}
+.lv3-hero h1{letter-spacing:-.052em;line-height:.94}
+.lv3-studybar,.lv3-qc-run{background:#132631}
+.lv3-screen{box-shadow:none;border:1px solid #d8d3ca}
+.lv3-lock-score,.lv3-purpose{background:#315f6d}
+.lv4-brief,.lv4-debrief{background:#fbfaf7}
