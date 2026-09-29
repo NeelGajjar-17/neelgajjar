@@ -127,3 +127,14 @@ html{scroll-behavior:smooth}body{font-family:Inter,ui-sans-serif,-apple-system,B
   :where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) .links{gap:14px}
   :where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) .links a{font-size:12px}
 }
+
+/* About editorial image */
+.about-editorial-art .editorial-image-frame{position:relative;aspect-ratio:16/9;overflow:hidden;background:#132631;border:1px solid #d8d4cc}
+.about-editorial-art .editorial-image-frame:after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);pointer-events:none}
+.about-editorial-art .editorial-image-frame img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.88) contrast(1.02)}
+.about-editorial-art figcaption{grid-template-columns:180px 1fr}
+@media(max-width:700px){
+  .about-editorial-art .editorial-image-frame{aspect-ratio:4/3}
+  .about-editorial-art .editorial-image-frame img{object-position:center}
+  .about-editorial-art figcaption{grid-template-columns:1fr}
+}
