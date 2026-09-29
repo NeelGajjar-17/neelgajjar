@@ -43,7 +43,57 @@
  </div>
 </section>
 
-<section data-story-reveal class="v3-signature"><div class="wrap"><div class="v3-signature-copy"><span class="v3-index">SYSTEM VIEW</span><p class="v3-overline">How the work connects</p><h2>One study.<br><em>One controlled data path.</em></h2><p>Clinical data moves through a sequence of connected decisions. Each stage carries forward the study requirement, the evidence collected and the context needed for the next review.</p></div><div class="v3-system-map" aria-label="Clinical data pathway from study requirement to database lock readiness"><div class="v3-map-head"><small>CLINICAL DATA CONTROL PATH</small><strong>Requirement → System → Review → Reconcile → Release</strong></div><div class="v3-map-flow"><article><span>01</span><small>STUDY INTENT</small><b>Protocol + endpoints</b><p>Define what must be collected and why.</p></article><i>→</i><article><span>02</span><small>COLLECTION SYSTEM</small><b>eCRF · EDC · ePRO</b><p>Translate requirements into controlled behavior.</p></article><i>→</i><article><span>03</span><small>DATA REVIEW</small><b>Queries + consistency</b><p>Surface missing, conflicting and unexpected data.</p></article><i>→</i><article><span>04</span><small>RECONCILIATION</small><b>Lab · Safety · External</b><p>Compare sources while preserving context.</p></article><i>→</i><article class="final"><span>05</span><small>RELEASE STATE</small><b>Lock readiness</b><p>Document what is resolved and what remains open.</p></article></div><div class="v3-map-control"><span>CONTROL LAYER</span><p>Traceability · evidence · review status · documented decision</p></div></div></div></section>
+<section data-story-reveal class="v3-signature"><div class="wrap"><div class="v3-signature-copy"><span class="v3-index">SYSTEM VIEW</span><p class="v3-overline">How the work connects</p><h2>One study.<br><em>One controlled data path.</em></h2><p>Clinical data moves through a sequence of connected decisions. Each stage carries forward the study requirement, the evidence collected and the context needed for the next review.</p></div><div class="v3-system-map" role="img" aria-label="Clinical Data Management pathway from study intent through collection, review and reconciliation to database lock readiness">
+  <div class="v3-map-head">
+    <div><small>CLINICAL DATA MANAGEMENT CONTROL PATH</small><b>How study intent becomes a controlled release state.</b></div>
+    <strong>Requirement <span>→</span> System <span>→</span> Review <span>→</span> Reconcile <span>→</span> Release</strong>
+  </div>
+  <div class="v3-map-flow">
+    <article>
+      <div class="v3-stage-marker"><span>01</span><i></i></div>
+      <small>STUDY INTENT</small>
+      <b>Protocol + endpoints</b>
+      <p>Define what must be collected, when it matters and why.</p>
+      <em>Requirement source</em>
+    </article>
+    <div class="v3-map-arrow" aria-hidden="true">→</div>
+    <article>
+      <div class="v3-stage-marker"><span>02</span><i></i></div>
+      <small>COLLECTION SYSTEM</small>
+      <b>eCRF · EDC · ePRO</b>
+      <p>Translate protocol requirements into controlled system behavior.</p>
+      <em>Configured control</em>
+    </article>
+    <div class="v3-map-arrow" aria-hidden="true">→</div>
+    <article class="review-stage">
+      <div class="v3-stage-marker"><span>03</span><i></i></div>
+      <small>DATA REVIEW</small>
+      <b>Queries + consistency</b>
+      <p>Surface missing, conflicting and unexpected data for review.</p>
+      <em>Human review point</em>
+    </article>
+    <div class="v3-map-arrow" aria-hidden="true">→</div>
+    <article class="review-stage">
+      <div class="v3-stage-marker"><span>04</span><i></i></div>
+      <small>RECONCILIATION</small>
+      <b>Lab · Safety · External</b>
+      <p>Compare sources while preserving timing, context and traceability.</p>
+      <em>Human review point</em>
+    </article>
+    <div class="v3-map-arrow" aria-hidden="true">→</div>
+    <article class="final">
+      <div class="v3-stage-marker"><span>05</span><i></i></div>
+      <small>RELEASE STATE</small>
+      <b>Database lock readiness</b>
+      <p>Confirm what is resolved, documented and still intentionally open.</p>
+      <em>Controlled decision</em>
+    </article>
+  </div>
+  <div class="v3-map-control">
+    <span>CONTROL LAYER</span>
+    <div><b>Traceability</b><b>Evidence</b><b>Review status</b><b>Documented decision</b></div>
+  </div>
+</div></div></section>
 <section data-story-reveal class="v3-lifecycle-home">
  <div class="wrap">
   <div class="v3-lifecycle-copy"><span class="v3-index">02</span><p class="v3-overline">Lifecycle ownership</p><h2>From protocol interpretation to <em>database lock readiness.</em></h2><p>My role sits across the full clinical data management lifecycle. The work changes by study stage, but the objective stays consistent: make requirements clear, data reviewable and decisions traceable.</p><a class="v3-textlink" href="/clinical-data/">Explore my clinical data operating model <span>→</span></a></div>
