@@ -121,3 +121,9 @@ html{scroll-behavior:smooth}body{font-family:Inter,ui-sans-serif,-apple-system,B
 /* Intentional incomplete-media state */
 .portfolio-video-placeholder button:disabled{cursor:default;opacity:.72;transform:none!important;background:rgba(255,255,255,.035);border-color:rgba(139,181,177,.45)}
 .portfolio-video-placeholder button:disabled:hover{transform:none;background:rgba(255,255,255,.035)}
+
+/* Navigation support for full discipline label */
+@media(max-width:1180px) and (min-width:851px){
+  :where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) .links{gap:14px}
+  :where(.home-v3,.profile-v3,.clinical-v3,.projects-v3,.lab-v3,.contact-v3) .links a{font-size:12px}
+}
